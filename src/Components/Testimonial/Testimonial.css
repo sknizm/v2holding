@@ -1,0 +1,112 @@
+.testimonial-section{
+    padding: 100px 40px;
+background: linear-gradient(rgba(238, 238, 238, 0.95), rgba(238, 238, 238, 0.95));
+    position: relative;
+}
+/* src/Slider.css */
+.testimonial-section .slider-container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+.testimonial-section .slider-container h1 {
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+}
+
+.testimonial-section .slider-container button { 
+    font-weight: 400;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    padding: 15px 40px;
+    outline: none;
+    font-size: 18px;
+    border: 2px solid #c2ab92;
+    color: #c2ab92;
+    background: #00000000;
+    transition: 0.2s;
+}
+
+
+.testimonial-section .slider-container button:hover { 
+    font-weight: 400;
+    letter-spacing: 1px;
+    outline: none;
+    border: 2px solid #00000000;
+    color: #fff;
+    background: #c2ab92;
+    transition: 0.3s;
+    
+}
+
+.testimonial-section .slider {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.testimonial-section .slider-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.testimonial-section .slider-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.testimonial-section .slider-item p {
+    font-size: 18px;
+    width: 60%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+.testimonial-section .slider-item h3 {
+    font-size: 24px;
+    width: 60%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000;
+}
+
+.testimonial-section .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #c2ab92;
+    color: #c2ab92;
+    background: #00000000;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 99;
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.testimonial-section .prev {
+    left: 10px;
+}
+
+.testimonial-section .next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    border: 2px solid #c2ab92;
+    color: #fff;
+    background: #c2ab92;
+}
