@@ -97,3 +97,33 @@
     font-size: 1.2em;
   }
   
+  @media (max-width:1024px) {
+    .hero .content h5{
+      font-size: 18px;
+    }
+    .hero .content h1{
+      font-size: 50px;
+    }
+    
+    .hero .content p{
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+    }
+  }
+  @media (max-width:768px) {
+    .hero .content h5{
+      font-size: 14px;
+    }
+    .hero .content h1{
+      font-size: 40px;
+    }
+    
+    .hero .content p{
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: capitalize;
+    }
+  }

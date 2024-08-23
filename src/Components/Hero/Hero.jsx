@@ -26,13 +26,13 @@ const Hero = () => {
         <h5>Hotel Dwarka, NR Colony, Basavanagudi</h5>
         <h1>V2 HOLDINGS</h1>
         <p>Unparalleled Service and Expert Advice at Every Step of the Real Estate Transaction</p>
-        <div className="search-div">
+        {/* <div className="search-div">
           <div className="search-box">
             <FaSearch className='icon' />
             <input type="text" placeholder='Search by City, Address or Neighborhood' />
           </div>
           <button>Search</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

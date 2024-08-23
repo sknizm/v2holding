@@ -46,10 +46,109 @@ nav .desktop-menu{
 nav .desktop-menu a{
     text-decoration: none;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 nav .menu-on-btn{
     color: #fff;
     margin-left: 20px;
     font-size: 2.3em;
+}
+
+@media (max-width:1024px) {
+    nav{
+        padding: 10px 20px;
+    }
+    nav .logo img{
+        width: 4em;
+    }
+    nav .search-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #fff;
+        margin: 0 50px;
+        padding: 10px 30px 10px 5px;
+    }
+    nav .search-box .icon{
+        color: #fff;
+        width: 2em;
+    }
+    nav .search-box input{
+        min-width: 250px;
+        background: #00000000;
+        outline: none;
+        border: 0;
+        color: #fff;
+    }
+    nav .search-box input::placeholder{
+        color: #fff;
+    }
+    
+    nav .desktop-menu{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+    }
+    nav .desktop-menu a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.8em;
+    }
+    nav .menu-on-btn{
+        color: #fff;
+        margin-left: 20px;
+        font-size: 2em;
+    }
+}
+
+@media (max-width:768px) {
+    nav{
+        padding: 10px 20px;
+    }
+    nav .logo img{
+        width: 4em;
+    }
+    nav .search-box{
+        display: none;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #fff;
+        margin: 0 50px;
+        padding: 10px 30px 10px 5px;
+    }
+    nav .search-box .icon{
+        color: #fff;
+        width: 2em;
+    }
+    nav .search-box input{
+        min-width: 250px;
+        background: #00000000;
+        outline: none;
+        border: 0;
+        color: #fff;
+    }
+    nav .search-box input::placeholder{
+        color: #fff;
+    }
+    
+    nav .desktop-menu{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+    }
+    nav .desktop-menu a{
+        text-decoration: none;
+        display: none;
+        color: #fff;
+        font-size: 0.8em;
+    }
+    nav .menu-on-btn{
+        color: #fff;
+        margin-left: 20px;
+        font-size: 2em;
+    }
 }
