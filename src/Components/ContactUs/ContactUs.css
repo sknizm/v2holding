@@ -1,0 +1,20 @@
+.contact-us-section{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0;
+    background: #ffe1c2;
+}
+.contact-us-section .title{
+    
+margin: 30px 0;
+
+font-size: 40px;
+font-weight: 500;
+letter-spacing: 8px;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
