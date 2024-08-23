@@ -1,12 +1,12 @@
 import React from 'react'
 import './About.css'
-import imageAbout from '../Assets/hero-bg.jpeg'
+import imageAbout from '../Assets/f.jpeg'
 
 const About = () => {
   return (
     <div className="about-section">
         <div className="details">
-            <h1>Calcagno & Hamilton Real Estate Group</h1>
+            <h1>V2 HOLDINGS</h1>
             <p>Calcagno-Hamilton Real Estate Group is #1 in the Santa Barbara MLS for transactions with over $1 Billion in sales. For nearly two decades Calcagno & Hamilton has been the top-producing real estate team in Montecito and the greater Santa Barbara region.</p>
 
    
