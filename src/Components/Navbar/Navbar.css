@@ -1,4 +1,4 @@
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,147 +8,192 @@ nav{
     left: 0;
     right: 0;
     z-index: 999;
-    background: #00000000;
-}
-nav .logo img{
-    width: 5em;
-}
-nav .search-box{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #fff;
-    margin: 0 50px;
-    padding: 10px 30px 10px 5px;
-}
-nav .search-box .icon{
-    color: #fff;
-    width: 2em;
-}
-nav .search-box input{
-    min-width: 250px;
-    background: #00000000;
-    outline: none;
-    border: 0;
-    color: #fff;
-}
-nav .search-box input::placeholder{
-    color: #fff;
+    background: transparent;
+    transition: background-color 0.3s ease-in-out;
 }
 
-nav .desktop-menu{
+nav.sticky {
+    background-color: white;
+    color: #000;
+}
+
+nav.sticky .menu a {
+    color: #000;
+}
+
+nav.hide {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav .logo img {
+    width: 5em;
+}
+
+nav .menu {
     flex: 1;
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 20px;
 }
-nav .desktop-menu a{
+
+nav .menu a {
+    text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     font-size: 1em;
+    position: relative;
 }
-nav .menu-on-btn{
+
+nav .menu a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -5px;
+    left: 0;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+nav .menu a.active::before,
+nav .menu a:hover::before {
+    width: 100%;
+}
+
+nav .menu .dropdown {
+    position: relative;
+}
+
+nav .menu .dropdown-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+    z-index: 998;
+}
+
+nav .menu .dropdown-menu.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+nav .menu .dropdown-menu a {
+    color: #000;
+    text-transform: none;
+}
+
+nav .menu-on-btn {
+    display: none;
     color: #fff;
     margin-left: 20px;
     font-size: 2.3em;
 }
 
-@media (max-width:1024px) {
-    nav{
-        padding: 10px 20px;
-    }
-    nav .logo img{
-        width: 4em;
-    }
-    nav .search-box{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: 1px solid #fff;
-        margin: 0 50px;
-        padding: 10px 30px 10px 5px;
-    }
-    nav .search-box .icon{
-        color: #fff;
-        width: 2em;
-    }
-    nav .search-box input{
-        min-width: 250px;
-        background: #00000000;
-        outline: none;
-        border: 0;
-        color: #fff;
-    }
-    nav .search-box input::placeholder{
-        color: #fff;
-    }
-    
-    nav .desktop-menu{
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: end;
-        gap: 20px;
-    }
-    nav .desktop-menu a{
-        text-decoration: none;
-        color: #fff;
-        font-size: 0.8em;
-    }
-    nav .menu-on-btn{
-        color: #fff;
-        margin-left: 20px;
-        font-size: 2em;
-    }
+nav .menu-off-btn {
+    display: none;
 }
 
-@media (max-width:768px) {
-    nav{
+@media (max-width: 1024px) {
+    nav {
+        padding: 10px 40px;
+    }
+
+    nav .logo img {
+        width: 5em;
+    }
+}
+@media (max-width: 768px) {
+    nav {
         padding: 10px 20px;
     }
-    nav .logo img{
+
+    nav .logo img {
         width: 4em;
     }
-    nav .search-box{
+
+    nav .menu {
+        position: fixed;
+        right: -100%;
+        top: 0;
+        bottom: 0;
+        min-height: 100vh;
+        background: #fff;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        padding: 20px;
+        transition: right 0.3s ease;
+        z-index: 998;
+    }
+
+    nav .menu a,
+    nav .menu .dropdown > a {
+        color: #000;
+        font-size: 1em;
+    }
+
+    nav .menu .dropdown-menu {
         display: none;
-        align-items: center;
-        justify-content: space-between;
-        border: 1px solid #fff;
-        margin: 0 50px;
-        padding: 10px 30px 10px 5px;
-    }
-    nav .search-box .icon{
-        color: #fff;
-        width: 2em;
-    }
-    nav .search-box input{
-        min-width: 250px;
-        background: #00000000;
-        outline: none;
-        border: 0;
-        color: #fff;
-    }
-    nav .search-box input::placeholder{
-        color: #fff;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding-left: 10px;
+        position: relative;
+        top: 0;
+        left: 0;
+        background: #fff;
+        box-shadow: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        opacity: 0;
+        transform: translateY(-10px);
+        z-index: 998;
     }
     
-    nav .desktop-menu{
-        flex: 1;
+    nav .menu .dropdown-menu.show {
         display: flex;
-        align-items: center;
-        justify-content: end;
-        gap: 20px;
     }
-    nav .desktop-menu a{
-        text-decoration: none;
-        display: none;
+
+    nav .menu-on-btn {
+        display: block;
         color: #fff;
-        font-size: 0.8em;
+        margin-left: 0px;
+        font-size: 2.3em;
+        cursor: pointer;
     }
-    nav .menu-on-btn{
-        color: #fff;
-        margin-left: 20px;
-        font-size: 2em;
+
+    nav .menu-off-btn {
+        display: block;
+        color: #000;
+        margin-bottom: 40px;
+        font-size: 1.6em;
+        cursor: pointer;
+    }
+
+   nav.sticky {
+        background: #fff;
+    }
+
+    .hide {
+        transform: translateY(-100%);
+        transition: transform 0.3s ease;
+    }
+
+    .menu-active .menu {
+        right: 0;
     }
 }
