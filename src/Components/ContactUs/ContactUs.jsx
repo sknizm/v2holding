@@ -23,7 +23,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='contact-us-section'>
+    <div className='contact-us-section' id='contact-section'>
       <div className="contact-box">
 
       <h1 className='title'>work with Us</h1>

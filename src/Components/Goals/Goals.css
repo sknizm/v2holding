@@ -78,3 +78,170 @@
     text-align: center;
     margin-bottom: 30px;
 }
+
+@media (max-width:768px) {
+    .goals-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 0;
+    }
+    
+    .goals-section .title {
+        margin: 30px 0 20px;
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+    
+    .goals-section .vision-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        width: 100%;
+    }
+    
+    .goals-section .vision-section .column {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+    .goals-section .vision-section .column2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+    .goals-section .vision-section .column .vision-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .goals-section .vision-section .column .vision-box h3 {
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    
+    .goals-section .vision-section .column .vision-box p {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+        width: 60%;
+        text-align: center;
+    }
+    
+    .goals-section .vision-section .column .vision-box img {
+        border: 8px solid #c2ab92;
+    }
+    .goals-section .bottom-box{
+    
+        padding: 80px;
+        background: #fffdfa76;
+    }
+    .goals-section .bottom-box p{
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width:430px) {
+    .goals-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 40px 0;
+    }
+    
+    .goals-section .title {
+        margin: 30px 0;
+        
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .goals-section .vision-section {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+        width: 100%;
+    }
+    
+    .goals-section .vision-section .column {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+    .goals-section .vision-section .column2 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    
+    .goals-section .vision-section .column .vision-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .goals-section .vision-section .column .vision-box h3 {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    
+    .goals-section .vision-section .column .vision-box p {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+        width: 60%;
+        text-align: center;
+    }
+    
+    .goals-section .vision-section .column .vision-box img {
+        border: 8px solid #c2ab92;
+    }
+    .goals-section .bottom-box{
+    
+        padding: 40px 20px;
+        background: #fff6e876;
+    }
+    .goals-section .bottom-box p{
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        line-height: 26px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+}

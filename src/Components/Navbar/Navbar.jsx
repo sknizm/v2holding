@@ -66,7 +66,7 @@ const Navbar = () => {
           </div>
         </div>
         <Link to="/about-us" onClick={toggleMenu}>About Us</Link>
-        <Link to="/contact" onClick={toggleMenu}>805-905-1243</Link>
+        <a href='#contact-section' onClick={toggleMenu}>Contact Us</a>
       </div>
 
       <FaBars className="menu-on-btn" onClick={toggleMenu} />

@@ -28,7 +28,7 @@ const Footer = () => {
           <p>
             <br />
             2holdings.blr@gmail.com <br />
-            v2holdings.blr@rediffmail.com
+            {/* v2holdings.blr@rediffmail.com */}
           </p>
         </div>
         <div className="row">

@@ -14,7 +14,7 @@ const Testimonial = () => {
             name: "Raven W."
         },
         {
-            text: "We have many properties in many different markets. We have houses, condos, and commercial real estate and I can honestly say cammie stands out above and beyond all Realtors® I have ever worked with (15+ deals). She not only was the most honest Realtor® I have ever dealt with but her attention to detail and willingness to do anything to keep us happy and get a deal done is unheard of today. We can honestly call her a good friend now too. Here is the craziest part of this story that you won’t believe. Our condo purchase was her first sale ever. She has nowhere to go but up from here. Do not hesitate in hiring her I promise...",
+            text: "I have ever dealt with but her attention to detail and willingness to do anything to keep us happy and get a deal done is unheard of today. We can honestly call her a good friend now too. Here is the craziest part of this story that you won’t believe. Our condo purchase was her first sale ever. She has nowhere to go but up from here. Do not hesitate in hiring her I promise...",
             name: "David W."
         },
         {
@@ -53,7 +53,7 @@ const Testimonial = () => {
                         </div>
                     ))}
                 </div>
-                <button>VIEW ALL</button>
+                {/* <button>VIEW ALL</button> */}
             </div>
         </div>
     );

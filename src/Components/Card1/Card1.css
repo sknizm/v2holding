@@ -114,3 +114,240 @@
     background: #c2ab92;
     transition: 0.3s;
 }
+
+@media (max-width:1024px) {
+    .card-1 .content .bottom-details {
+        display: flex;
+        width: 100%;
+        background: #00000073;
+        align-items: center;
+        justify-content: space-between;
+        align-self: flex-end;
+        transition: 0.3s all ease;
+        flex-direction: column;
+        padding: 30px 30px 10px 30px;
+        color: #fff;
+    }
+    
+    .card-1 .status-prop {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: #ffffffbf;
+        border-radius: 3px;
+    }
+    
+    .card-1 .bottom-details .flex-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .card-1 .bottom-details .shown-div h1 {
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .card-1 .bottom-details .shown-div h3 {
+        font-style: italic;
+        font-size: 21px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .card-1 .bottom-details .hidden-div {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        height: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .card-1:hover .bottom-details .hidden-div {
+        opacity: 1;
+        height: auto;
+        transform: translateY(0);
+    }
+    
+    .card-1 .bottom-details .hidden-div p {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+    }
+    
+}
+
+
+@media (max-width:768px) {
+    .card-1 .content .bottom-details {
+        display: flex;
+        width: 100%;
+        background: #00000073;
+        align-items: center;
+        justify-content: space-between;
+        align-self: flex-end;
+        transition: 0.3s all ease;
+        flex-direction: column;
+        padding: 30px 20px;
+        color: #fff;
+    }
+    
+    .card-1 .status-prop {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: #ffffffbf;
+        border-radius: 3px;
+    }
+    
+    .card-1 .bottom-details .flex-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .card-1 .bottom-details .shown-div h1 {
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .card-1 .bottom-details .shown-div h3 {
+        font-style: italic;
+        font-size: 21px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .card-1 .bottom-details .hidden-div {
+        opacity: 1;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .card-1:hover .bottom-details .hidden-div {
+        opacity: 1;
+        height: auto;
+        transform: translateY(0);
+    }
+    
+    .card-1 .bottom-details .hidden-div p {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+    }
+    
+}
+
+
+@media (max-width:430px) {
+    .card-1 .content .bottom-details {
+        display: flex;
+        width: 100%;
+        background: #00000073;
+        align-items: center;
+        justify-content: space-between;
+        align-self: flex-end;
+        transition: 0.3s all ease;
+        flex-direction: column;
+        padding:  20px;
+        color: #fff;
+    }
+    
+    .card-1 .status-prop {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        padding: 10px 20px;
+        background: #ffffffbf;
+        border-radius: 3px;
+        display: none
+        ;
+    }
+    
+    .card-1 .bottom-details .flex-box {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .card-1 .bottom-details .shown-div h1 {
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .card-1 .bottom-details .shown-div h3 {
+        font-style: italic;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+    }
+    
+    .card-1 .bottom-details .hidden-div {
+        opacity: 1;
+        transform: translateY(20px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        height: auto;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .card-1:hover .bottom-details .hidden-div {
+        opacity: 1;
+        height: auto;
+        transform: translateY(0);
+    }
+    
+    .card-1 .bottom-details .hidden-div p {
+        text-transform: uppercase;
+        display: none;
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 3px;
+        font-style: italic;
+    }
+    
+.card-1 .bottom-details .hidden-div button {
+    font-weight: 400;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    padding: 15px 40px;
+    outline: none;
+    font-size: 12px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: transparent;
+    transition: 0.2s;
+}
+
+.card-1 .bottom-details .hidden-div button:hover {
+    border: 2px solid transparent;
+    background: #c2ab92;
+    transition: 0.3s;
+}
+
+}

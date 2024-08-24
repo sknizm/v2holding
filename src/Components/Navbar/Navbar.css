@@ -196,4 +196,9 @@ nav .menu-off-btn {
     .menu-active .menu {
         right: 0;
     }
+    
+nav.sticky .menu-on-btn {
+    color: #000;
+}
+
 }
