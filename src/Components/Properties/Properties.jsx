@@ -4,7 +4,7 @@ import Card1 from '../Card1/Card1'
 
 const Properties = ({title, property}) => {
   return (
-    <div className='property-list-section'>
+    <div className='property-list-section2'>
       <div className="heading">
       <div className="title-box">
       <h1 className='title'>{title}</h1>

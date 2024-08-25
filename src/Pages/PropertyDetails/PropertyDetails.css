@@ -1,0 +1,101 @@
+.property-details{
+    padding: 0 ;
+    background: #c2ab92;
+ 
+}
+
+.property-details .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    background: #fff;
+}
+
+.property-details .details h1{
+    
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.property-details .details h2{
+    
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.property-details .details p{
+    
+    font-size: 18px;
+    width: 80%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+.property-details .details .video-section{
+    width: 100%;
+    margin:  0;
+}
+.property-details .details .video-section video{
+    width: 100%;
+    margin:  0;
+}
+.property-details .details .map-location{
+    width: 100%;
+    height: 300px;
+    margin: 50px 0;
+}
+
+@media (max-width:768px) {
+    .property-details{
+        padding: 80px 0 0 0 ;
+    }
+    .property-details .details{
+        padding: 80px 40px;
+    }
+    
+}
+
+@media (max-width:430px) {
+    .property-details{
+        padding: 80px 0 0 0 ;
+    }
+    .property-details .details{
+        padding: 40px 20px;
+    }
+    
+.property-details .details h1{
+    
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.property-details .details h2{
+    
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.property-details .details p{
+    
+    font-size: 14px;
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: left;
+    color: #000;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+}

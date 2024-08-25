@@ -1,8 +1,9 @@
 import React from 'react'
 import './Card1.css'
-const Card1 = ({image,title,price, address, bath, area, beds }) => {
+import { Link } from 'react-router-dom'
+const Card1 = ({id,image,title,price, address, bath, area, beds }) => {
   return (
-    <div className='card-1'>
+    <Link to={'/property-details/:id'} className='card-1'>
         <img src={image} alt="property-image" />
         <p className='status-prop'>FOR SALE</p>
         <div className="content">
@@ -21,7 +22,7 @@ const Card1 = ({image,title,price, address, bath, area, beds }) => {
                 </div>
             </div>
         </div>
-    </div>
+    </Link>
   )
 }
 
