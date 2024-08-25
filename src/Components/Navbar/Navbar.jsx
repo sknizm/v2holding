@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import logo from '../Assets/logo.png';
-import { FaBars } from 'react-icons/fa';
+import { FaAngleDown, FaBars } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
 import { Link } from 'react-router-dom';
 
@@ -42,6 +42,7 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setDropdownOpen(false)
   };
 
   const toggleDropdown = () => {
@@ -56,16 +57,16 @@ const Navbar = () => {
 
       <div className="menu">
         <ImCross className="menu-off-btn" onClick={toggleMenu} />
-        <Link to="/home" onClick={toggleMenu}>Home</Link>
+        <Link to="/" onClick={toggleMenu}>Home</Link>
         <div className="dropdown">
-          <Link to="#" onClick={toggleDropdown}>Projects {">"} </Link>
+          <Link to="#" onClick={toggleDropdown}>Projects <FaAngleDown/> </Link>
           <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
-            <Link to="/properties/residential" onClick={toggleMenu}>Residential</Link>
-            <Link to="/properties/commercial" onClick={toggleMenu}>Commercial</Link>
-            <Link to="/properties/industrial" onClick={toggleMenu}>Upcoming</Link>
+            <Link to={`/category/${"residential"}`} onClick={toggleMenu}>Residential</Link>
+            <Link to={`/category/${"commercial"}`} onClick={toggleMenu}>Commercial</Link>
+            <Link to={`/category/${"upcoming"}`} onClick={toggleMenu}>Upcoming</Link>
           </div>
         </div>
-        <Link to="/about-us" onClick={toggleMenu}>About Us</Link>
+        <Link to="/about" onClick={toggleMenu}>About Us</Link>
         <a href='#contact-section' onClick={toggleMenu}>Contact Us</a>
       </div>
 

@@ -1,11 +1,15 @@
 import React from 'react'
-import './PropertyList.css'
+import './Properties.css'
 import Card1 from '../Card1/Card1'
 
-const PropertyList = ({title, property}) => {
+const Properties = ({title, property}) => {
   return (
     <div className='property-list-section'>
-        <h1 className='title'>{title}</h1>
+      <div className="heading">
+      <div className="title-box">
+      <h1 className='title'>{title}</h1>
+      </div>
+      </div>
         <div className="list-div">
         {property.map((e)=>{
             return <Card1 image={e.image} title={e.title} price={e.price} address={e.address} beds={e.beds} bath={e.bath} area={e.area}/>
@@ -16,4 +20,4 @@ const PropertyList = ({title, property}) => {
   )
 }
 
-export default PropertyList
+export default Properties

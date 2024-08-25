@@ -41,17 +41,20 @@ text-transform: uppercase;
     display: block;
     margin-bottom: 5px;
     font-size: 24px;
-color: #545454;
+color: #303030;
 font-weight: 500;
+
   }
   
   .contact-us-section .form-group input,
+  .contact-us-section .form-group select,
   .contact-us-section .form-group textarea {
     width: 90%;
     padding: 10px ;
     border: 1px solid #c2ab92;
     border-radius: 5px;
     font-size: 21px;
+    resize: none;
   }
   
   .contact-us-section button[type='submit'] {
@@ -118,8 +121,8 @@ font-weight: 500;
     .contact-us-section .form-group label {
       display: block;
       margin-bottom: 5px;
-      font-size: 24px;
-  color: #545454;
+      font-size: 21px;
+  color: #000;
   font-weight: 500;
     }
     
