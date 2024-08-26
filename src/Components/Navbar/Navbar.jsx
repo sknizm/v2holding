@@ -11,6 +11,7 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen2, setDropdownOpen2] = useState(false);
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
@@ -25,6 +26,7 @@ const Navbar = () => {
     if (currentScrollY > lastScrollY && currentScrollY > scrollThreshold) {
       setIsHidden(true);
       setDropdownOpen(false)
+      setDropdownOpen2(false)
     } else {
       setIsHidden(false);
     }
@@ -43,10 +45,17 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
     setDropdownOpen(false)
+    setDropdownOpen2(false)
   };
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+    setDropdownOpen2(false)
+  };
+
+  const toggleDropdown2 = () => {
+    setDropdownOpen2(!dropdownOpen2)
+    setDropdownOpen(false);
   };
 
   return (
@@ -66,7 +75,13 @@ const Navbar = () => {
             <Link to={`/category/${"upcoming"}`} onClick={toggleMenu}>Upcoming</Link>
           </div>
         </div>
-        <Link to="/about" onClick={toggleMenu}>About Us</Link>
+        <div className="dropdown">
+          <Link to="#" onClick={toggleDropdown2}>About Us <FaAngleDown/> </Link>
+          <div className={`dropdown-menu ${dropdownOpen2 ? 'show' : ''}`}>
+            <Link to={`/leadership`} onClick={toggleMenu}>Leadership</Link>
+            <Link to={`/awards`} onClick={toggleMenu}>Awards</Link>
+          </div>
+        </div>
         <a href='#contact-section' onClick={toggleMenu}>Contact Us</a>
       </div>
 

@@ -17,7 +17,7 @@ const ImageSlider = ({slides}) => {
     };
 
     return (
-        <div className='testimonial-section2'>
+        <div className='image-slider'>
             <button className="prev" onClick={prevSlide}>
                 &#10094;
             </button>

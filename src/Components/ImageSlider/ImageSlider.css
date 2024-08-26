@@ -1,17 +1,17 @@
-.testimonial-section2{
+.image-slider{
     padding:  0px;
     position: relative;
     margin: 0 0px;
 }
 /* src/Slider.css */
-.testimonial-section2 .slider-container {
+.image-slider .slider-container {
     position: relative;
     width: 100%;
     text-align: center;
     margin: auto;
     overflow: hidden;
 }
-.testimonial-section2 .slider-container button { 
+.image-slider .slider-container button { 
     font-weight: 400;
     margin-top: 20px;
     letter-spacing: 1px;
@@ -25,7 +25,7 @@
 }
 
 
-.testimonial-section2 .slider-container button:hover { 
+.image-slider .slider-container button:hover { 
     font-weight: 400;
     letter-spacing: 1px;
     outline: none;
@@ -36,18 +36,18 @@
     
 }
 
-.testimonial-section2 .slider {
+.image-slider .slider {
     display: flex;
     overflow: hidden;
     width: 100%;
 }
 
-.testimonial-section2 .slider-inner {
+.image-slider .slider-inner {
     display: flex;
     transition: transform 0.5s ease;
 }
 
-.testimonial-section2 .slider-item {
+.image-slider .slider-item {
     min-width: 100%;
     display: flex;
     flex-direction: column;
@@ -56,13 +56,13 @@
     color: white;
 }
 
-.testimonial-section2 .slider-item img {
+.image-slider .slider-item img {
     width: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-.testimonial-section2 .slider-item h3 {
+.image-slider .slider-item h3 {
     font-size: 24px;
     width: 60%;
     letter-spacing: 2px;
@@ -70,7 +70,7 @@
     color: #000;
 }
 
-.testimonial-section2 .prev, .next {
+.image-slider .prev,.image-slider .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -84,15 +84,15 @@
     transition: 0.3s;
 }
 
-.testimonial-section2 .prev {
+.image-slider .prev {
     left: 10px;
 }
 
-.testimonial-section2 .next {
+.image-slider .next {
     right: 10px;
 }
 
-.prev:hover, .next:hover {
+.image-slider .prev:hover, .image-slider .next:hover {
     border: 2px solid #c2ab92;
     color: #c2ab92;
     background: #00000000;
@@ -100,7 +100,7 @@
 
 @media (max-width:768px) {
     
-.testimonial-section2 .prev, .next {
+.image-slider .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -114,15 +114,15 @@
     transition: 0.3s;
 }
 
-.testimonial-section2 .prev {
+.image-slider .prev {
     left: 0px;
 }
 
-.testimonial-section2 .next {
+.image-slider .next {
     right: 0px;
 }
 
-.prev:hover, .next:hover {
+.image-slider .prev:hover,.image-slider .next:hover {
     border: 2px solid #c2ab92;
     color: #c2ab92;
     background: #00000000;

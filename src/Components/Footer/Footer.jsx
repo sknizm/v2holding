@@ -27,8 +27,18 @@ const Footer = () => {
           </p>
           <p>
             <br />
-            2holdings.blr@gmail.com <br />
+            V2holdings.blr@gmail.com <br />
             {/* v2holdings.blr@rediffmail.com */}
+          </p>
+        </div>
+        <div className="row">
+          <h3 className="sub-title">Sales and Enquiry</h3>
+          <p>
+            Mobile: <br />
+            +91 99452 55552 <br />
+            +91 99452 55553 <br />
+            +91 90717 12000 <br />
+            +91 99452 55550 <br />
           </p>
         </div>
         <div className="row">

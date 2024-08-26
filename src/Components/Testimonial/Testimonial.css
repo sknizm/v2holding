@@ -84,7 +84,7 @@ background: linear-gradient(rgba(238, 238, 238, 0.95), rgba(238, 238, 238, 0.95)
     color: #000;
 }
 
-.testimonial-section .prev, .next {
+.testimonial-section .prev,.testimonial-section .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -106,7 +106,7 @@ background: linear-gradient(rgba(238, 238, 238, 0.95), rgba(238, 238, 238, 0.95)
     right: 10px;
 }
 
-.prev:hover, .next:hover {
+.testimonial-section .prev:hover,.testimonial-section .next:hover {
     border: 2px solid #c2ab92;
     color: #fff;
     background: #c2ab92;
@@ -344,7 +344,7 @@ background: linear-gradient(rgba(238, 238, 238, 0.95), rgba(238, 238, 238, 0.95)
         right: 10px;
     }
     
-    .prev:hover, .next:hover {
+    .testimonial-section .prev:hover, .next:hover {
         border: 2px solid #c2ab92;
         color: #fff;
         background: #c2ab92;

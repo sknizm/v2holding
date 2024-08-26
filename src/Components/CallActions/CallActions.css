@@ -1,0 +1,40 @@
+.call-actions{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+     
+}.call-actions img{
+    width: 4em;
+    z-index: 999;
+     
+}
+.call-actions a{
+    background: #fff;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:768px){ 
+    .call-actions{
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+    
+         
+    }.call-actions img{
+        width: 3.5em;
+         
+    }
+}

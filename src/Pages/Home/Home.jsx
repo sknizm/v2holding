@@ -11,6 +11,7 @@ import image4 from '../../Components/Assets/c.jpeg'
 import Goals from '../../Components/Goals/Goals'
 import ContactUs from '../../Components/ContactUs/ContactUs'
 import Footer from '../../Components/Footer/Footer'
+import CallActions from '../../Components/CallActions/CallActions'
 
 const Home = () => {
 
@@ -62,6 +63,7 @@ const dataList = [
       <Testimonial/>
       <Goals/>
       <ContactUs/>
+      <CallActions/>
       <Footer/>
       
     </div>
