@@ -7,6 +7,7 @@ import PropertyDetails from './Pages/PropertyDetails/PropertyDetails'
 import Awards from './Pages/Awards/Awards'
 import Leadership from './Pages/Leadership/Leadership'
 import Admin from './Pages/Admin/Admin'
+import EnquiryDetail from './Components/EnquiryDetail/EnquiryDetail'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
     <Route path='/awards' element={<Awards/>}/>
     <Route path='/leadership' element={<Leadership/>}/>
     <Route path='/v2-admin' element={<Admin/>}/>
+    <Route path='/v2-admin/enquiry/:id' element={<EnquiryDetail/>}/>
 
     </Routes>
     

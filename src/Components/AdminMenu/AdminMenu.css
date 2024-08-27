@@ -1,19 +1,27 @@
 .admin-menu {
     background-color: #1a1a1a; /* Dark background for the sidebar */
     color: #ffffff; /* White text */
-    flex-basis: 25%;
-    height: 100%; /* Full height */
+    flex-basis: 20%;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    bottom: 0;
     padding: 20px; /* Padding inside the sidebar *//* Slight shadow for depth */
   }
   
   .admin-menu h1 {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px; /* Larger font size for the title */
     margin-bottom: 30px; /* Space below the title */
     text-align: center; /* Center-align the title */
-    color: #00bfa6; /* A distinct color for the title */
+    color: #fff; /* A distinct color for the title */
+    text-transform: uppercase;
   }
   
   .menus h3 {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
     font-size: 18px; /* Font size for the section title */
     margin-bottom: 15px; /* Space below the section title */
     cursor: pointer; /* Cursor changes to pointer on hover */
@@ -21,6 +29,10 @@
   }
   
   .menus h3:hover {
+    color: #00bfa6; /* Change color on hover */
+  }
+  
+  .menus h3.active {
     color: #00bfa6; /* Change color on hover */
   }
   
@@ -34,6 +46,8 @@
   }
   
   .menus h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
     padding: 10px 15px; /* Padding for the menu items */
   }
   

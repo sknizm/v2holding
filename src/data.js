@@ -126,4 +126,105 @@ export const awardList = [
     text:'Builders Association of India - Senior Builder Award'
   },
 ]
+
+
+
+export const awardList2 = [
+  {
+    image: awrd1,
+    text:'Excellence In Luxurious and Innovative Construction - V2 Vaishak (Residential Building)'
+  },
+  {
+    image: awrd2,
+    text:'Member of CREDAI Bengaluru 2023-2024'
+  },
+  {
+    image: awrd3,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+  {
+    image: awrd4,
+    text:'Vijayavani Property Expo 2023 Award'
+  },
+  {
+    image: awrd5,
+    text:'Best Customer Award given by Sir M Visvesvaraya Co-Operative Bank Pvt Ltd'
+  },
+  {
+    image: awrd6,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+  {
+    image: awrd1,
+    text:'Excellence In Luxurious and Innovative Construction - V2 Vaishak (Residential Building)'
+  },
+  {
+    image: awrd2,
+    text:'Member of CREDAI Bengaluru 2023-2024'
+  },
+  {
+    image: awrd3,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+  {
+    image: awrd4,
+    text:'Vijayavani Property Expo 2023 Award'
+  },
+  {
+    image: awrd5,
+    text:'Best Customer Award given by Sir M Visvesvaraya Co-Operative Bank Pvt Ltd'
+  },
+  {
+    image: awrd6,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+  {
+    image: awrd1,
+    text:'Excellence In Luxurious and Innovative Construction - V2 Vaishak (Residential Building)'
+  },
+  {
+    image: awrd2,
+    text:'Member of CREDAI Bengaluru 2023-2024'
+  },
+  {
+    image: awrd3,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+  {
+    image: awrd4,
+    text:'Vijayavani Property Expo 2023 Award'
+  },
+  {
+    image: awrd5,
+    text:'Best Customer Award given by Sir M Visvesvaraya Co-Operative Bank Pvt Ltd'
+  },
+  {
+    image: awrd6,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+  {
+    image: awrd1,
+    text:'Excellence In Luxurious and Innovative Construction - V2 Vaishak (Residential Building)'
+  },
+  {
+    image: awrd2,
+    text:'Member of CREDAI Bengaluru 2023-2024'
+  },
+  {
+    image: awrd3,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+  {
+    image: awrd4,
+    text:'Vijayavani Property Expo 2023 Award'
+  },
+  {
+    image: awrd5,
+    text:'Best Customer Award given by Sir M Visvesvaraya Co-Operative Bank Pvt Ltd'
+  },
+  {
+    image: awrd6,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+]
 // mongodb+srv://v2holdings:Mewtwo22@@cluster0.qfmea.mongodb.net/v2holdings
