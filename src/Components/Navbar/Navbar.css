@@ -11,7 +11,9 @@ nav {
     background: transparent;
     transition: background-color 0.3s ease-in-out;
 }
-
+nav.dp-none{
+    display: none;
+}
 nav.sticky {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.371);
     background-color: #ffffffb0;

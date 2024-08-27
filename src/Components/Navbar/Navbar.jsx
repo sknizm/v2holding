@@ -3,9 +3,10 @@ import './Navbar.css';
 import logo from '../Assets/logo.png';
 import { FaAngleDown, FaBars } from 'react-icons/fa';
 import { ImCross } from 'react-icons/im';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const loaction = useLocation();
   const [isSticky, setIsSticky] = useState(false);
   const [isHidden, setIsHidden] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -59,7 +60,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${isSticky ? 'sticky' : ''} ${isHidden ? 'hide' : ''} ${menuOpen ? 'menu-active' : ''}`}>
+    <nav className={`${isSticky ? 'sticky' : ''} ${isHidden ? 'hide' : ''} ${menuOpen ? 'menu-active' : ''} ${loaction.pathname==="/v2-admin"?'dp-none':''}`}>
       <div className="logo">
         <img src={logo} alt="Logo" />
       </div>

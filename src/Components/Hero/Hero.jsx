@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div className={`hero ${isVideoLoaded?'bg-none':''}`}>
       <div className="video-container">
-        <video className="bg-video" src={bgvideo} loop muted  
+        <video className="bg-video" src={bgvideo} loop muted  autoPlay
           onCanPlay={handleCanPlay}
           onError={handleError} />
       </div>

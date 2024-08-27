@@ -1,0 +1,47 @@
+.admin-menu {
+    background-color: #1a1a1a; /* Dark background for the sidebar */
+    color: #ffffff; /* White text */
+    flex-basis: 25%;
+    height: 100%; /* Full height */
+    padding: 20px; /* Padding inside the sidebar *//* Slight shadow for depth */
+  }
+  
+  .admin-menu h1 {
+    font-size: 24px; /* Larger font size for the title */
+    margin-bottom: 30px; /* Space below the title */
+    text-align: center; /* Center-align the title */
+    color: #00bfa6; /* A distinct color for the title */
+  }
+  
+  .menus h3 {
+    font-size: 18px; /* Font size for the section title */
+    margin-bottom: 15px; /* Space below the section title */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .menus h3:hover {
+    color: #00bfa6; /* Change color on hover */
+  }
+  
+  .menus h3::before {
+    content: ""; /* Adds a bullet before the text */
+    color: #00bfa6; /* Bullet color */
+  }
+  
+  .menus {
+    margin-top: 20px; /* Space between title and menus */
+  }
+  
+  .menus h3 {
+    padding: 10px 15px; /* Padding for the menu items */
+  }
+  
+  .menus h3:hover {
+    background-color: #333333; /* Background color change on hover */
+    border-radius: 5px; /* Indentation on hover */
+  }.menus h3.active {
+    background-color: #333333; /* Background color change on hover */
+    border-radius: 5px; /* Indentation on hover */
+  }
+  
