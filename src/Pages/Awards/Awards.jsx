@@ -1,6 +1,6 @@
 import React from 'react'
 import './Awards.css'
-import { award_list } from '../../data'
+import { awardList } from '../../data'
 import Card2 from '../../Components/Card2/Card2'
 import Footer from '../../Components/Footer/Footer'
 
@@ -15,7 +15,7 @@ const Awards = () => {
         </div>
         <div className="awards-list">
             {
-                award_list.map((e)=>{
+                awardList.map((e)=>{
                     return <Card2 image={e.image} text={e.text}/>
                 })
             }

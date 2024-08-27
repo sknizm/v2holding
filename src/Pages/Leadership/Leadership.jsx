@@ -27,7 +27,7 @@ const Leadership = () => {
           </p>
         </div>
       </div>
-      <h1>V2 HOLDINGS</h1>
+      <h1 className="head1">Achievements</h1>
       <div className="leadership-list">
         {award_list.map((e) => {
           return <Card2 image={e.image} text={e.text} />;

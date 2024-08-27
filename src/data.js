@@ -5,6 +5,13 @@ import image4 from './Components/Assets/d.jpeg'
 import award1 from './Components/Assets/award1.webp'
 import award2 from './Components/Assets/award2.webp'
 import award3 from './Components/Assets/award3.webp'
+
+import awrd1 from './Components/Assets/awrd1.webp'
+import awrd2 from './Components/Assets/awrd2.webp'
+import awrd3 from './Components/Assets/awrd3.webp'
+import awrd4 from './Components/Assets/awrd4.webp'
+import awrd5 from './Components/Assets/awrd5.webp'
+import awrd6 from './Components/Assets/awrd6.webp'
 export const dataList = [
     {
       title:"V2 Vishanath",
@@ -93,3 +100,30 @@ export const dataList = [
         text:"Award By Aishwarya Kalyanikethana"
     },
 ]
+export const awardList = [
+  {
+    image: awrd1,
+    text:'Excellence In Luxurious and Innovative Construction - V2 Vaishak (Residential Building)'
+  },
+  {
+    image: awrd2,
+    text:'Member of CREDAI Bengaluru 2023-2024'
+  },
+  {
+    image: awrd3,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+  {
+    image: awrd4,
+    text:'Vijayavani Property Expo 2023 Award'
+  },
+  {
+    image: awrd5,
+    text:'Best Customer Award given by Sir M Visvesvaraya Co-Operative Bank Pvt Ltd'
+  },
+  {
+    image: awrd6,
+    text:'Builders Association of India - Senior Builder Award'
+  },
+]
+// mongodb+srv://v2holdings:Mewtwo22@@cluster0.qfmea.mongodb.net/v2holdings
