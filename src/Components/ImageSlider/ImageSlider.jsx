@@ -18,11 +18,11 @@ const ImageSlider = ({slides}) => {
 
     return (
         <div className='image-slider'>
-            <button className="prev" onClick={prevSlide}>
+            <button className="prev2" onClick={prevSlide}>
                 &#10094;
             </button>
 
-            <button className="next" onClick={nextSlide}>
+            <button className="next2" onClick={nextSlide}>
                 &#10095;
             </button>
 
