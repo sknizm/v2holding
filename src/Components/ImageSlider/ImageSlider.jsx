@@ -30,7 +30,7 @@ const ImageSlider = ({slides}) => {
                 <div className="slider-inner" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                     {slides.map((e) => (
                         <div  className="slider-item">
-                            <img src={e.image} alt="" />
+                            <img src={e} alt="" />
                         </div>
                     ))}
                 </div>

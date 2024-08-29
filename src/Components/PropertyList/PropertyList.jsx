@@ -8,7 +8,7 @@ const PropertyList = ({title, property}) => {
         <h1 className='title'>{title}</h1>
         <div className="list-div">
         {property.map((e)=>{
-            return <Card1 image={e.image} title={e.title} price={e.price} address={e.address} beds={e.beds} bath={e.bath} area={e.area}/>
+            return <Card1 propertyid={e.propertyid} image={e.propertyImage[0]} title={e.projectTitle} price={e.propertyPrice} address={e.location} />
         })}
         </div>
         {/* <button>VIEW ALL</button> */}

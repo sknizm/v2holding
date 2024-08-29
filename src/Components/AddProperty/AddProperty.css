@@ -1,0 +1,29 @@
+.add-property{
+
+}
+.add-property .box{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
+.add-property .box input,
+.add-property .box select,
+.add-property .box textarea{
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    outline: none;
+}
+.add-property .box textarea{
+    min-height: 200px;
+}
+.add-property .box label{
+    margin: 10px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.add-property button{
+    
+    margin: 10px 30px;
+    padding: 10px 30px;
+}

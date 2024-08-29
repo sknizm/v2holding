@@ -45,3 +45,13 @@
     outline: none;
     border: 0;
 }
+.all-property-list .property-list a{
+    padding:10px 30px;
+    background: green;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    text-decoration: none;
+    border: 0;
+    margin-right: 20px;
+}

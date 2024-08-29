@@ -12,6 +12,29 @@ import awrd3 from './Components/Assets/awrd3.webp'
 import awrd4 from './Components/Assets/awrd4.webp'
 import awrd5 from './Components/Assets/awrd5.webp'
 import awrd6 from './Components/Assets/awrd6.webp'
+
+
+
+export const base_url = "http://localhost:5000";
+
+
+
+
+export const exportDate = (isoDate)=>{
+  const date = new Date(isoDate);
+
+// Example: Formatting to a more readable date string
+const formattedDate = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+  hour12: true,
+});
+return formattedDate;
+}
 export const dataList = [
     {
       title:"V2 Vishanath",

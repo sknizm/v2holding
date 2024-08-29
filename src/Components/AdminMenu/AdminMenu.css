@@ -59,3 +59,15 @@
     border-radius: 5px; /* Indentation on hover */
   }
   
+@media (max-width:768px) {
+
+  .admin-menu {
+    background-color: #1a1a1a; /* Dark background for the sidebar */
+    color: #ffffff; /* White text */
+    flex-basis: 100%;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+  }
+  
+}

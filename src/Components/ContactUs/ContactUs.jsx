@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
 import './ContactUs.css';
-
+import { base_url } from '../../data';
 const ContactUs = () => {
+  const [msg, setMsg] = useState('')
+  const [uploadSuccess, setUploadSuccess] = useState(false)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '', // Added phone field
     message: '',
-    propertyType: '' // Added propertyType field
+    requirement: '' // Added propertyType field
   });
 
   const handleChange = (e) => {
@@ -18,11 +20,34 @@ const ContactUs = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => { 
     e.preventDefault();
     console.log('Form Data:', formData);
-    // Here you would typically send the form data to a server
+  
+    try {
+      const response = await fetch(`${base_url}/enquiry`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json", // Assuming formData is JSON
+        },
+        body: JSON.stringify(formData), // Convert formData to JSON string if it's an object
+      });
+  
+      if (response.ok) {
+        const data = await response.json();
+        setUploadSuccess(true);
+        setMsg('Your message was successfully sent!');
+        // Reset form data or handle successful submission state here
+      } else {
+        const errorData = await response.json();
+        setMsg(`Failed to send message: ${errorData.message}`);
+      }
+    } catch (error) {
+      console.error("Error uploading files:", error);
+      setMsg('An error occurred while sending your message. Please try again.');
+    }
   };
+  
 
   return (
     <div className='contact-us-section' id='contact-section'>
@@ -63,11 +88,11 @@ const ContactUs = () => {
             />
           </div>
           <div className='form-group'> {/* Added dropdown for property type */}
-            <label htmlFor='propertyType'>Property Type</label>
+            <label htmlFor='requirement'>Property Type</label>
             <select 
-              id='propertyType' 
-              name='propertyType' 
-              value={formData.propertyType} 
+              id='requirement' 
+              name='requirement' 
+              value={formData.requirement} 
               onChange={handleChange} 
               required
             >
@@ -86,8 +111,12 @@ const ContactUs = () => {
               onChange={handleChange} 
             />
           </div>
-          <button type='submit'>Submit</button>
-        </form>
+          {
+            uploadSuccess?<p style={{ color:uploadSuccess ? 'white' : 'red' , background:msg===''?'00000000':'#00000056', padding:'10px 0'}} className='message-send'>{msg}</p>
+            : <button type='submit'>Submit</button>
+          }
+         
+           </form>
       </div>
     </div>
   );

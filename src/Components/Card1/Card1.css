@@ -38,9 +38,13 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    color: #000;
     padding: 10px 20px;
     background: #ffffffbf;
     border-radius: 3px;
+}
+.card-1 a{
+    color: #000;
 }
 
 .card-1 .bottom-details .flex-box {

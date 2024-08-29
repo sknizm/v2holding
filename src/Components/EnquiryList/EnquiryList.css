@@ -3,6 +3,10 @@
     flex-direction: column;
     align-items: start;
 }
+.enquiry-list .download-btn{
+    padding:15px 40px;
+    margin-bottom: 20px;
+}
 .enquiry-list .upper-section{
     padding: 30px;
 }
@@ -27,6 +31,13 @@
     align-items: center;
     justify-content: space-between;
 }
+.enquiry-list .property-list .list .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin-right: 20px;
+}
 .enquiry-list .property-list img{
     width: 100%;
     max-width: 40px;
@@ -35,17 +46,77 @@
     font-style: none;
     font-family: Arial, Helvetica, sans-serif;
     color: #000;
-    text-align: left;
-    flex: 1;
     margin-left: 30px;
     text-decoration: none;
     text-transform: uppercase;
 }
 .enquiry-list .property-list button{
     padding:10px 30px;
-    background: red;
     color: #fff;
     border-radius: 5px;
     outline: none;
     border: 0;
 }
+.enquiry-list .property-list .actions .open-btn{
+    background: green;
+    margin-right: 20px;
+}
+.enquiry-list .property-list .actions .delete-btn{
+    background: red;
+}
+
+.enquiry-list .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .enquiry-list .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .enquiry-list .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+    width: 500px;
+  }
+  .enquiry-list .modal-content p{
+    
+    font-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px 0;
+  }
+  
+  .enquiry-list .close-btn {
+    margin-top: 20px;
+    padding: 15px 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .enquiry-list .close-btn:hover {
+    background-color: #d32f2f;
+  }
+  
