@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Leadership.css";
 import { award_list } from "../../data";
 import Card2 from "../../Components/Card2/Card2";
@@ -6,6 +6,10 @@ import dp from "../../Components/Assets/dp.webp";
 import Footer from "../../Components/Footer/Footer";
 
 const Leadership = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="leadership">
       <div className="header">

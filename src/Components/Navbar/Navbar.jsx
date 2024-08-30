@@ -71,9 +71,9 @@ const Navbar = () => {
         <div className="dropdown">
           <Link to="#" onClick={toggleDropdown}>Projects <FaAngleDown/> </Link>
           <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
-            <Link to={`/category/${"residential"}`} onClick={toggleMenu}>Residential</Link>
+            <Link to={`/category/${"completed"}`} onClick={toggleMenu}>Completed</Link>
             <Link to={`/category/${"commercial"}`} onClick={toggleMenu}>Commercial</Link>
-            <Link to={`/category/${"upcoming"}`} onClick={toggleMenu}>Upcoming</Link>
+            <Link to={`/category/${"ongoing"}`} onClick={toggleMenu}>Ongoing</Link>
           </div>
         </div>
         <div className="dropdown">

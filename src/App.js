@@ -8,6 +8,9 @@ import Awards from './Pages/Awards/Awards'
 import Leadership from './Pages/Leadership/Leadership'
 import Admin from './Pages/Admin/Admin'
 import EnquiryDetail from './Components/EnquiryDetail/EnquiryDetail'
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-1PRYXYKDP9");
 
 const App = () => {
   return (

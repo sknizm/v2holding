@@ -42,9 +42,9 @@ const Goals = () => {
             </div>
         </div>
    <div className="bottom-box">
-   <p>​Our team comprises educated and experienced individuals from diverse backgrounds, working together to execute projects efficiently. Construction operations are overseen by a team of highly qualified engineers, ensuring quality, timely delivery, and client satisfaction. Our track record of successful projects reflects our motto of Quality, Timely Delivery, and Client Satisfaction.</p>
+  <p>Our team is composed of highly educated and experienced professionals from diverse backgrounds, all working cohesively to execute projects with precision and efficiency. Our construction operations are meticulously overseen by a team of highly qualified engineers, ensuring the highest standards of quality, on-time delivery, and exceptional client satisfaction. Our impressive track record of successful projects is a testament to our unwavering commitment to these core values.</p>
     <br />
-    <p>With an in-house team of engineers and a proven record in high-rise buildings, we are equipped to undertake both in-house projects and contractual works. Additionally, our in-house marketing team excels in promoting and selling residential units to interested buyers.</p>
+   <p>With a skilled in-house team of engineers and extensive experience in high-rise construction, we are well-equipped to handle both in-house developments and contractual projects. Complementing our technical expertise, our dedicated in-house marketing team excels in promoting and selling residential units, ensuring that each project reaches its intended audience effectively.</p>
    </div> 
     </div>
   )

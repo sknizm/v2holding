@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Awards.css'
 import { awardList } from '../../data'
 import Card2 from '../../Components/Card2/Card2'
 import Footer from '../../Components/Footer/Footer'
 
 const Awards = () => {
- 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+    
   return (
     <div className='awards'>
         <div className="header">

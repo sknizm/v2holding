@@ -10,7 +10,7 @@ const Card1 = ({image,title,price, address, propertyid  }) => {
             <div className="bottom-details">
                 <div className="shown-div flex-box">
                 <h1>{title}</h1>
-                <h3>${price}</h3>
+                <h3>{price==="0"?``:`$${price}`}</h3>
 
                 </div>
                 <div className="hidden-div flex-box">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './ContactUs.css';
 import { base_url } from '../../data';
+import ReactGA from "react-ga4";
 const ContactUs = () => {
   const [msg, setMsg] = useState('')
   const [uploadSuccess, setUploadSuccess] = useState(false)
@@ -36,6 +37,7 @@ const ContactUs = () => {
       if (response.ok) {
         const data = await response.json();
         setUploadSuccess(true);
+        handleButtonClick()
         setMsg('Your message was successfully sent!');
         // Reset form data or handle successful submission state here
       } else {
@@ -48,6 +50,15 @@ const ContactUs = () => {
     }
   };
   
+const handleButtonClick = () => {
+  ReactGA.event({
+    category: "User",      
+    action: "Clicked Contact Button",  
+    label: "Message Send",    
+  });
+
+  // Additional logic for your button click
+};
 
   return (
     <div className='contact-us-section' id='contact-section'>

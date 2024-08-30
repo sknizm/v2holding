@@ -13,6 +13,7 @@ import ContactUs from '../../Components/ContactUs/ContactUs';
 import Footer from '../../Components/Footer/Footer';
 import CallActions from '../../Components/CallActions/CallActions';
 import { base_url } from '../../data';
+import ReactGA from "react-ga4";
 
 const Home = () => {
 
@@ -58,6 +59,7 @@ const dataList = [
   },
 ]
 
+ReactGA.send({ hitType: "pageview", page: "/", title: "Home Page Visit" });
 
   const [latest, setLatest] = useState([]);
 

@@ -23,9 +23,9 @@ const Hero = () => {
       </div>
 
       <div className="content">
-        <h5>Hotel Dwarka, NR Colony, Basavanagudi</h5>
+        {/* <h5>Hotel Dwarka, NR Colony, Basavanagudi</h5> */}
         <h1>V2 HOLDINGS</h1>
-        <p>Unparalleled Service and Expert Advice at Every Step of the Real Estate Transaction</p>
+      <p>Exceptional service and expert guidance at every step of your real estate journey.</p>
       </div>
     </div>
   );

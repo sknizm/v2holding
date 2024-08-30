@@ -6,11 +6,17 @@ import Footer from "../../Components/Footer/Footer";
 import video from "../../Components/Assets/bg-video.mp4";
 import { useParams } from "react-router-dom"; // Import useParams hook to get route parameters
 import { base_url } from "../../data";
+import ReactGA from "react-ga4";
 
 const PropertyDetails = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [property, setProperty] = useState(null);
   const { id } = useParams(); // Get the property ID from the URL
 
+  
 
   useEffect(() => {
     const fetchProperty = async () => {
@@ -26,6 +32,8 @@ const PropertyDetails = () => {
         if (response.ok) {
           const data = await response.json();
           setProperty(data);
+          ReactGA.send({ hitType: "pageview", page: `/property-details/${id}`, title: `${property?.projectTitle} Visited` });
+ 
         } else {
           console.error('Property not found');
         }
@@ -38,7 +46,7 @@ const PropertyDetails = () => {
   }, [id]);
 
 
-  if (!property) {
+   if (!property) {
     return <div>Loading...</div>;
   }
 

@@ -6,20 +6,28 @@ const Testimonial = () => {
 
     const slides = [
         {
-            text: "I don’t know where to begin. We have many properties in many different markets. We have houses, condos, and commercial real estate and I can honestly say cammie stands out above and beyond all Realtors® I have ever worked with (15+ deals). She not only was the most honest Realtor® I have ever dealt with but her attention to detail and willingness to do anything to keep us happy and get a deal done is unheard of today. We can honestly call her a good friend now too. Here is the craziest part of this story that you won’t believe. Our condo purchase was her first sale ever. She has nowhere to go but up from here. Do not hesitate in hiring her I promise...",
-            name: "Keith W."
+            text:"Excellent project with educated and enthusiastic family’s ,good environment",
+            name:"KUNDAN JEWELS"
         },
         {
-            text: "Read this if trying to buy. We have many properties in many different markets. We have houses, condos, and commercial real estate and I can honestly say cammie stands out above and beyond all Realtors® I have ever worked with (15+ deals). She not only was the most honest Realtor® I have ever dealt with but her attention to detail and willingness to do anything to keep us happy and get a deal done is unheard of today. We can honestly call her a good friend now too. Here is the craziest part of this story that you won’t believe. Our condo purchase was her first sale ever. She has nowhere to go but up from here. Do not hesitate in hiring her I promise...",
-            name: "Raven W."
+            text:"Good project for upper middle class family with maximum aminities building all ready completed other work started",
+            name:"Rajendra Kumar Jain"
         },
         {
-            text: "I have ever dealt with but her attention to detail and willingness to do anything to keep us happy and get a deal done is unheard of today. We can honestly call her a good friend now too. Here is the craziest part of this story that you won’t believe. Our condo purchase was her first sale ever. She has nowhere to go but up from here. Do not hesitate in hiring her I promise...",
-            name: "David W."
+            text:"Good Service",
+            name:"Parmesh E"
         },
         {
-            text: "Read this if trying to buy or sell. We have many properties in many different markets. We have houses, condos, and commercial real estate and I can honestly say cammie stands out above and beyond all Realtors® I have ever worked with (15+ deals). She not only was the most honest Realtor® I have ever dealt with but her attention to detail and willingness to do anything to keep us happy and get a deal done is unheard of today. We can honestly call her a good friend now too. Here is the craziest part of this story that you won’t believe. Our condo purchase was her first sale ever. She has nowhere to go but up from here. Do not hesitate in hiring her I promise...",
-            name: "Messy W."
+            text:"Quality construction of apartments.",
+            name:"Ashok Kumar"
+        },
+        {
+            text:"Nice project near City centre and co-operative staff",
+            name:"Jatin Dalal"
+        },
+        {
+            text:"It is a very beautiful apartment, there is only one garbage point near the city, if BB MP is removed then there will be no space near the city in this budget.",
+            name:"Pandit Mahesh Trivedi"
         }
     ];
 

@@ -165,9 +165,9 @@ const AddProperty = () => {
             required
           >
             <option value="">Select Property Type</option>
-            <option value="2BHK">2BHK</option>
-            <option value="3BHK">3BHK</option>
-            <option value="4BHK">4BHK</option>
+            <option value="completed">COMPLETED</option>
+            <option value="commercial">COMMERCIAL</option>
+            <option value="ongoing">ONGOING</option>
           </select>
         </div>
 
