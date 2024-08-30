@@ -20,44 +20,6 @@ const Home = () => {
 
 
   
-const dataList = [
-  {
-    title:"V2 Vishanath",
-    address:"home alone, 21 street, Chennai",
-    beds:4,
-    bath:4.5,
-    area:230,
-    price:"330,000",
-    image:image1
-  },
-  {
-    title:"V2 Vishanath",
-    address:"home alone, 21 street, Chennai",
-    beds:4,
-    bath:4.5,
-    area:230,
-    price:"330,000",
-    image:image2
-  },
-  {
-    title:"V2 Vishanath",
-    address:"home alone, 21 street, Chennai",
-    beds:4,
-    bath:4.5,
-    area:230,
-    price:"330,000",
-    image:image3
-  },
-  {
-    title:"V2 Vishanath",
-    address:"home alone, 21 street, Chennai",
-    beds:4,
-    bath:4.5,
-    area:230,
-    price:"330,000",
-    image:image4
-  },
-]
 
 ReactGA.send({ hitType: "pageview", page: "/", title: "Home Page Visit" });
 
