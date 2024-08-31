@@ -13,6 +13,53 @@
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
 }
 
+.login-container {
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+.login-container::before{
+    content: '';
+    width: 100vw;
+    height: 100vh;
+    background: #e6e6e6;
+}
+  .login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+
+  
 @media (max-width:768px) {
     .admin{
         display: flex;

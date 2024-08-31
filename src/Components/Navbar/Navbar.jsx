@@ -62,7 +62,7 @@ const Navbar = () => {
   return (
     <nav className={`${isSticky ? 'sticky' : ''} ${isHidden ? 'hide' : ''} ${menuOpen ? 'menu-active' : ''} ${loaction.pathname==="/v2-admin"?'dp-none':''}`}>
       <div className="logo">
-        <img src={logo} alt="Logo" />
+        <Link to={'/'}><img src={logo} alt="Logo" /></Link>
       </div>
 
       <div className="menu">
@@ -71,7 +71,7 @@ const Navbar = () => {
         <div className="dropdown">
           <Link to="#" onClick={toggleDropdown}>Projects <FaAngleDown/> </Link>
           <div className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
-            <Link to={`/category/${"completed"}`} onClick={toggleMenu}>Completed</Link>
+            <Link to={`/category/${"residential"}`} onClick={toggleMenu}>Residential</Link>
             <Link to={`/category/${"commercial"}`} onClick={toggleMenu}>Commercial</Link>
             <Link to={`/category/${"ongoing"}`} onClick={toggleMenu}>Ongoing</Link>
           </div>

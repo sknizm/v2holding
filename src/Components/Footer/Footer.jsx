@@ -43,11 +43,12 @@ const Footer = () => {
         </div>
         <div className="row">
           <h3 className="sub-title">Opening Hours</h3>
-          <p>Mon-Sun: 10:00 am to 05:00 pm</p>
+          <p>Mon-Sun: 10:00 am to 06:00 pm</p>
         </div>
       </div>
       <div className="map-details">
         <iframe
+        title="map location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243.03288625010345!2d77.56770334341246!3d12.938146393324637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae158c00b2bf89%3A0xae8511c89c4a9f62!2sV2%20Holdings!5e0!3m2!1sen!2sin!4v1724411559304!5m2!1sen!2sin"
           width="100%"
           height="100%"

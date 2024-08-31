@@ -3,7 +3,7 @@ import "./AddProperty.css";
 import { base_url } from "../../data";
 import { useNavigate } from "react-router-dom";
 
-const AddProperty = () => {
+const AddProperty = ({setMenu}) => {
   const navigate = useNavigate();
 
   const [selectedImages, setSelectedImages] = useState([]);
@@ -136,7 +136,7 @@ const AddProperty = () => {
       }
       console.log("formData After Upload", formData);
       alert("Property Added");
-      navigate("/v2-admin");
+      setMenu('properties');
     } catch (error) {
       console.error("Error:", error);
     }
@@ -165,7 +165,7 @@ const AddProperty = () => {
             required
           >
             <option value="">Select Property Type</option>
-            <option value="completed">COMPLETED</option>
+            <option value="residential">RESIDENTIAL</option>
             <option value="commercial">COMMERCIAL</option>
             <option value="ongoing">ONGOING</option>
           </select>

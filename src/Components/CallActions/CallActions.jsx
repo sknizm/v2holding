@@ -1,13 +1,13 @@
 import React from 'react';
 import './CallActions.css';
-import wp_img from '../Assets/wp.png';
+import whatsapp from '../Assets/whatsapp.png';
 import call_img from '../Assets/call.png';
 import ReactGA from "react-ga4";
 
 const CallActions = () => {
 
   const handleButtonClick = (event, buttonName, url) => {
-    event.preventDefault();  // Prevent the default anchor behavior
+    event.preventDefault();
     ReactGA.event({
       category: "User",
       action: "Click Button",
@@ -32,7 +32,7 @@ const CallActions = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={wp_img} alt="Whatsapp button" />
+        <img src={whatsapp} alt="Whatsapp button" />
       </a>
     </div>
   );
