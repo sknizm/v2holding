@@ -47,7 +47,7 @@ ReactGA.send({ hitType: "pageview", page: "/", title: "Home Page Visit" });
     <div className='home'>
       <Hero />
       <About />
-      <PropertyList title={"LATEST PROPERTIES"} property={latest} />
+      <PropertyList title={"CURRENT PROJECTS"} property={latest} />
       <Testimonial />
       <Goals />
       <ContactUs />

@@ -43,7 +43,7 @@ const Footer = () => {
         </div>
         <div className="row">
           <h3 className="sub-title">Opening Hours</h3>
-          <p>Mon-Sun: 10:00 am to 06:00 pm</p>
+          <p>Mon-Sun: 10:00 am to 07:00 pm</p>
         </div>
       </div>
       <div className="map-details">
@@ -59,8 +59,8 @@ const Footer = () => {
         ></iframe>
       </div>
       <div className="copyright">
-        <p>Copyright @ 2024 V2 Holdigs</p>
-        <p>Website designed and developed by <a href="https://sheikhnizam.xyz">Sheikh Nizam</a> </p>
+        <p >Copyright @ 2024 V2 Holdigs</p>
+        <p className="portfolio"> Developed by <a href="https://sheikhnizam.xyz">Sheikh Nizam</a> </p>
       </div>
     </footer>
   );

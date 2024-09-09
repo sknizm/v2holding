@@ -22,12 +22,7 @@ const Leadership = () => {
         <div className="bio">
           <h1>Dr. P L Venkatarama Reddy</h1>
           <p>
-            The Managing Director of the company, since its inception over two
-            decades ago, has established a prominent position in the real estate
-            development and construction industry. By consistently setting
-            high-quality benchmarks in property development, including
-            residential apartments and commercial spaces in prime locations, the
-            promoter demonstrates a strong foundation of professionalism.
+          For over two decades, the Managing Director has led the company to a prominent position in real estate development and construction. By consistently delivering high-quality residential and commercial properties in prime locations, the company has established a strong reputation for professionalism.
           </p>
         </div>
       </div>
