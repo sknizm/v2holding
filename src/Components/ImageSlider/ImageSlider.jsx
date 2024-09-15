@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './ImageSlider.css';
-import { dataList } from '../../data';
 
 const ImageSlider = ({slides}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -18,11 +17,11 @@ const ImageSlider = ({slides}) => {
 
     return (
         <div className='image-slider'>
-            <button className="prev2" onClick={prevSlide}>
+            <button className={`prev2 ${slides.length===1?'di-none':''}`} onClick={prevSlide}>
                 &#10094;
             </button>
 
-            <button className="next2" onClick={nextSlide}>
+            <button className={`next2 ${slides.length===1?'di-none':''}`} onClick={nextSlide}>
                 &#10095;
             </button>
 

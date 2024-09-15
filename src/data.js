@@ -16,7 +16,7 @@ import awrd6 from './Components/Assets/awrd6.webp'
 
 
 // export const base_url = "http://localhost:5000";
-export const base_url = "https://backend-v2.sheikhnizam.xyz";
+export const base_url = "https://backend.v2holdings.co";
 
 
 

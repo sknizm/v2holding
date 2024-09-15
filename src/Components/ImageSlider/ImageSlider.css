@@ -98,6 +98,9 @@
     background: #00000000;
 }
 
+.di-none{
+    display: none;
+}
 @media (max-width:768px) {
     
 .image-slider .prev2,

@@ -4,10 +4,6 @@ import Hero from '../../Components/Hero/Hero';
 import About from '../../Components/About/About';
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import PropertyList from '../../Components/PropertyList/PropertyList';
-import image1 from '../../Components/Assets/a.jpeg';
-import image2 from '../../Components/Assets/d.jpeg';
-import image3 from '../../Components/Assets/b.jpeg';
-import image4 from '../../Components/Assets/c.jpeg';
 import Goals from '../../Components/Goals/Goals';
 import ContactUs from '../../Components/ContactUs/ContactUs';
 import Footer from '../../Components/Footer/Footer';
@@ -50,7 +46,7 @@ ReactGA.send({ hitType: "pageview", page: "/", title: "Home Page Visit" });
       <PropertyList title={"CURRENT PROJECTS"} property={latest} />
       <Testimonial />
       <Goals />
-      <ContactUs />
+      <ContactUs type={1}/>
       <CallActions />
       <Footer />
     </div>

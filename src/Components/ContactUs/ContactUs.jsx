@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import './ContactUs.css';
 import { base_url } from '../../data';
 import ReactGA from "react-ga4";
-const ContactUs = () => {
-  const [msg, setMsg] = useState('')
-  const [uploadSuccess, setUploadSuccess] = useState(false)
+import vajra from '../Assets/vajra.pdf'
+
+const ContactUs = ({type, title}) => {
+  const [msg, setMsg] = useState('');
+  const [uploadSuccess, setUploadSuccess] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -37,7 +39,7 @@ const ContactUs = () => {
       if (response.ok) {
         const data = await response.json();
         setUploadSuccess(true);
-        handleButtonClick()
+        handleButtonClick();
         setMsg('Your message was successfully sent!');
         // Reset form data or handle successful submission state here
       } else {
@@ -50,15 +52,23 @@ const ContactUs = () => {
     }
   };
   
-const handleButtonClick = () => {
-  ReactGA.event({
-    category: "User",      
-    action: "Clicked Contact Button",  
-    label: "Message Send",    
-  });
+  const handleButtonClick = () => {
+    ReactGA.event({
+      category: "User",      
+      action: "Clicked Contact Button",  
+      label: "Message Send",    
+    });
 
-  // Additional logic for your button click
-};
+    // Additional logic for your button click
+  };
+
+  const downloadBrochure = () => {
+    // Trigger the download of the PDF file located in the assets folder
+    const link = document.createElement('a');
+    link.href = vajra;  // Path to the brochure PDF in the public/assets folder
+    link.download = 'vajra.pdf';  // Set the file name for download
+    link.click();  // Simulate a click event to start the download
+  };
 
   return (
     <div className='contact-us-section' id='contact-section'>
@@ -123,11 +133,29 @@ const handleButtonClick = () => {
             />
           </div>
           {
-            uploadSuccess?<p style={{ color:uploadSuccess ? 'white' : 'red' , background:msg===''?'00000000':'#00000056', padding:'10px 0'}} className='message-send'>{msg}</p>
-            : <button type='submit'>Submit</button>
-          }
-         
-           </form>
+  uploadSuccess ? (
+    title !== 'V2 Vajra Elegance' ? (
+      <p
+        style={{
+          color: uploadSuccess ? 'white' : 'red',
+          background: msg === '' ? '#00000000' : '#00000056',
+          padding: '10px 0',
+        }}
+        className="message-send"
+      >
+        {msg}
+      </p>
+    ) : (
+      <div className="download-btn" onClick={downloadBrochure}>
+        Download Brochure
+      </div>
+    )
+  ) : (
+    <button type="submit">Submit</button>
+  )
+}
+
+        </form>
       </div>
     </div>
   );

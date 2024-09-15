@@ -3,7 +3,6 @@ import "./PropertyDetails.css";
 import ImageSlider from "../../Components/ImageSlider/ImageSlider";
 import ContactUs from "../../Components/ContactUs/ContactUs";
 import Footer from "../../Components/Footer/Footer";
-import video from "../../Components/Assets/bg-video.mp4";
 import { useParams } from "react-router-dom"; // Import useParams hook to get route parameters
 import { base_url } from "../../data";
 import ReactGA from "react-ga4";
@@ -58,14 +57,15 @@ const PropertyDetails = () => {
         <p>
           {property.aboutProperty}   </p>
 
-        <div className="video-section">
+        <div className={`video-section ${property.propertyVideo===''?'di-none':''}`}>
           <h2>Walkthrough</h2>
           <video className="video-walkthrough" src={property.propertyVideo} controls />
         </div>
 
-        <div className="map-location">
+        <div   className={`map-location ${property.googleMapLocation===''?'di-none':''}`}>
           <h2>Location</h2>
           <iframe
+        title="property address"
             src={property.googleMapLocation} // Use property-specific Google Maps location
             width="100%"
             height="100%"
@@ -76,7 +76,7 @@ const PropertyDetails = () => {
           ></iframe>
         </div>
       </div>
-      <ContactUs />
+      <ContactUs type={1} title={property.projectTitle} />
       <Footer />
     </div>
   );

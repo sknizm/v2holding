@@ -10,7 +10,7 @@ const Footer = () => {
           <h3 className="sub-title">Address</h3>
           <p>
             18, 3rd Main Rd, near Hotel Dwarka, NR Colony, Basavanagudi,
-            Bengaluru, Karnataka 560004
+            Bengaluru, Karnataka 560019
           </p>
         </div>
         <div className="row">

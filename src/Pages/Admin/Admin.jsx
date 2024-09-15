@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Admin.css';
 import AdminMenu from '../../Components/AdminMenu/AdminMenu';
 import AllPropertyList from '../../Components/AllPropertyList/AllPropertyList';
@@ -12,15 +12,29 @@ const Admin = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
+  // Check if user is already authenticated on component mount
+  useEffect(() => {
+    const savedAuth = localStorage.getItem('isAuthenticated');
+    if (savedAuth === 'true') {
+      setIsAuthenticated(true);
+    }
+  }, []);
+
   const handleLogin = () => {
     const correctUsername = 'admin';
     const correctPassword = 'V2HoldingsAug2024';
     
     if (username === correctUsername && password === correctPassword) {
       setIsAuthenticated(true);
+      localStorage.setItem('isAuthenticated', 'true');  // Save authentication status
     } else {
       alert('Incorrect username or password');
     }
+  };
+
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+    localStorage.removeItem('isAuthenticated');  // Remove authentication status
   };
 
   const renderContent = () => {
@@ -61,7 +75,8 @@ const Admin = () => {
 
   return (
     <div className="admin">
-      <AdminMenu menu={menu} setMenu={setMenu} />
+      
+      <AdminMenu handleLogout={handleLogout} menu={menu} setMenu={setMenu} />
       <div className="side-panel">
         {renderContent()}
       </div>
